@@ -1,0 +1,209 @@
+<html><head><title>VES Camera Reports</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1">
+<style type="text/css">
+ol{margin:0;padding:0}
+body {
+  margin: 0px;
+}
+
+.c11{list-style-type:square;margin:0;padding:0}
+.c1{list-style-type:disc;margin:0;padding:0}
+//.c2{color:#1155cc;text-decoration:underline}
+.c3{margin-top: 5px; margin-right:72pt;direction:ltr;margin-left:90pt}
+.header{background-color: #333; color: white;}
+.c4{padding-left:0pt;margin-right:72pt;direction:ltr;margin-left:108pt}
+//.c5{color:inherit;text-decoration:none}
+.c5:hover{text-decoration: underline;}
+.c6{margin-right:-108pt;direction:ltr;margin-left:90pt}
+.c7{padding-left:0pt;margin-right:-108pt;direction:ltr;margin-left:108pt}
+.c8{list-style-position:inside;text-indent:135pt}
+.c9{font-size:10pt}
+.c10{text-align:center}
+.c0{margin-right:72pt;height:11pt;direction:ltr;margin-left:90pt}
+.c12{max-width:760 .1pt;background-color:#ffffff;
+padding:18pt 81 .8pt 36pt 0pt}
+
+.title{padding-top:24pt;line-height:1.15;text-align:left;color:#000000;font-size:36pt;font-family:"Arial";font-weight:bold;padding-bottom:6pt}
+
+.subtitle{padding-top:18pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:24pt;font-family:"Georgia";padding-bottom:4pt}
+
+a{text-decoration: none; }
+a:hover{text-decoration: underline;}
+a:visited{color: #436FBD;}
+
+li{color:#000000;font-size:11pt;font-family:"Arial"}
+
+p{color:#000000;font-size:11pt;margin:0;font-family:"Arial"}
+
+h1{padding-top:24pt;line-height:1.15;text-align:left;color:#FFF;font-size:30pt;font-family:"Arial";font-weight:bold;padding-bottom:6pt}
+
+h2{padding-top:18pt;line-height:1.15;text-align:left;color:#000000;font-size:14pt;font-family:"Arial";font-weight:bold;padding-bottom:4pt}
+
+h3{padding-top:14pt;line-height:1.15;text-align:left;color:#666666;font-size:12pt;font-family:"Arial";font-weight:bold;padding-bottom:4pt}
+
+h4{padding-top:12pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:11pt;font-family:"Arial";padding-bottom:2pt}
+
+h5{padding-top:11pt;line-height:1.15;text-align:left;color:#666666;font-size:10pt;font-family:"Arial";font-weight:bold;padding-bottom:2pt}
+
+h6{padding-top:10pt;line-height:1.15;text-align:left;color:#666666;font-style:italic;font-size:10pt;font-family:"Arial";padding-bottom:2pt}</style>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-36089428-2', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+
+
+</script>
+</head>
+<body >
+<div class="header">
+<table class="c3">
+<tr><td><a href="http://www.visualeffectssociety.com"><img src="https://www.visualeffectssociety.com//sites/all/themes/ves7/css/images/nav/head-logo.png" /></a></td>
+<td><h1 class="c3 c10"><a name="h.qajqqp3mxzli"></a><span>VES Camera Reports</span></h1></td></tr>
+</table>
+</div>
+<div class="c12">
+<h3 class="c3"><span>Contents</span></h3>
+<ol class="c1" start="1">
+<li class="c4"><a href="#background">Background</a></li>
+<li class="c4"><a href="#goals">Goals</a></li>
+<li class="c4"><a href="#spec">Introduction to Specification</a></li>
+<li class="c4"><a href="#how">How to be involved</a></li>
+<li class="c4"><a href="#download">Downloads</a></li>
+<li class="c4"><a href="#links">links</a></li>
+<li class="c4"><a href="#links">VES Technology Committee</a></li>
+</ol>
+</div>
+
+<div class="c12">
+<h3 class="c3"><a id="background" name="h.eqzbhy5mts0z"></a><span>Background</span></h3>
+<p class="c3">
+<span>A key ingredient to creating high quality visual effects is the ability to recreate a digital replica of the environment in which the scene was captured. Accurate knowledge of the camera information and key measurements of the set are critical to aiding this process. The Visual Effect Camera Reports are the key record for most of this information.</span></p>
+<p class="c3"><span>Despite the fact that most studios agree on the fundamental data that needs to be captured on set, there has yet to be any consensus on a standard camera report format to record this information. We've set out to fix that.</span></p>
+<h3 class="c3"><a id="goals" name="h.yb1iv2vde6bt"></a><span>Goals</span></h3>
+<p class="c3"><span>The primary goals for developing the VES camera report are:</span></p>
+<ol class="c1" start="1">
+<li class="c4"><span>Provide a known standard set of fields and a well specified format for exporting (or importing) the data.</span></li>
+<li class="c4"><span>Make it as easy as possible for a facility to ingest camera reports and their associated data even though they may have been created by another company or production.</span></li>
+</ol>
+<p class="c3"><span>The secondary goals are:</span></p>
+<ol class="c1" start="1">
+<li class="c4"><span>Provide baseline camera reports that productions can adopt which output the standard set of fields correctly. This will serve as a useful tool for some productions, while providing an example application for others to improve on in the future.
+</span></li>
+<li class="c4"><span>Provide versions of camera reports for film and digital shoots, as well as stereo shoots. Multiple cameras are supported.</span></li>
+</ol>
+
+<h3 class="c6"><a id='spec'
+name="h.sed4b9i8ctbx"></a><span>Interchange Format Introduction</span></h3>
+<p class="c3"><span>
+The file format is a csv file, that combines slates and takes into a
+single row per take, repeating the slate information for each row. The
+take fields will be prefixed by "tk" to make them easy to
+identify. The first line will include the file fields. For more
+details see: <a onclick="trackOutboundLink('https://docs.google.com/document/d/17CVfBa2a1m2lyve5NFIovfTFC76GF5DE8qdPD1Fd4UI/pub'); return false;" href="https://docs.google.com/document/d/17CVfBa2a1m2lyve5NFIovfTFC76GF5DE8qdPD1Fd4UI/pub">Camera Report Interchange Format</a>.
+
+<li><iframe class="c3" width='800' height='300' scrolling='yes' src="https://docs.google.com/spreadsheet/pub?key=0AnE1uazTlVCGdDAtUkRwQlB4bWwxM0pKWGJneFZINmc&single=true&gid=2&output=html&range=A1%3ABG14"></iframe></li>
+</ol>
+
+<h3 class="c6"><a id='involve' name="h.sed4b9i8ctbx"></a><span>How to be involved</span></h3>
+<p class="c3"><span>
+Where you are a studio, vfx vendor or data wrangler we welcome your input. Please review the camera report specification and <a href="https://groups.google.com/forum/#!forum/ves-tech-camera-reports">give us feedback</a>.</p>
+<p class="c3"><span>
+Even if you have no input at this time, please join the <span class="c2"><a class="c5" href="https://groups.google.com/forum/#!forum/ves-tech-camera-reports">ves-tech-camera-reports</a></span> google group.
+</p>
+<h3 class="c6"><a id='download' name="h.97cryb66063a"></a><span>Downloads</span></h3>
+<p class="c3"><span>
+The camera reports are available to download as a filemaker database. This is intended as a baseline. We encourage 3rd party vendors to produce custom solutions that support this format as a standard for interchange.
+<p class="c3"><span>
+We plan to list additional 3rd party applications that support this interchange format. 3rd party support might allow integration directly with ingest, the digital cameras and script supervising systems, or simply a better interface than filemaker can provide.
+</p>
+<p class="c3" style="background-color:#DDD">
+<table style='border-spacing: 8px;'>
+<tr><th></th><th>File</th><th>Version</th><th>Size</th></tr>
+<tr><td align='center' rowspan='6' style='width:120px'>Downloads<BR/><img src="https://windirstat.info//images/download.png"/></td>
+<td>
+<span class="c2"><a class="c5" onclick="trackOutboundLink('filemaker_12/ves_camera_reports.fmp12?raw=true'); return false;" href="filemaker_12/ves_camera_reports.fmp12?raw=true">Camera Report Database for Filemaker 12 and newer</a> </span></td><td>version 2.1</td><td align='right'>2.9 MB</td></tr>
+<tr><td>
+  <span class="c2">
+     <a class="c5" onclick="trackOutboundLink('filemaker_11/ves_camera_reports.fp7?raw=true'); return false;" href="filemaker_11/ves_camera_reports.fp7?raw=true">Camera Report Database for Filemaker 11</a>  </span>
+</td><td>version 1.1</td><td align='right'>7 MB</td>
+ </tr>
+<tr><td>
+   <span class="c2">
+    <a class="c5" onclick="trackOutboundLink('standalone/VES_CameraReport_Standalone.dmg?raw=true'); return false;" href="standalone/VES_CameraReport_Standalone.dmg?raw=true'">Self-contained filemaker camera-report macOS application</a>
+   </span>
+</td><td><td align='right'>59 MB</td></tr>
+<tr><td>
+   <span class="c2">
+    Free iOS 
+    <a class="c5" onclick="trackOutboundLink('https://itunes.apple.com/us/app/filemaker-go-17/id1274628191?mt=8'); return false;" href="https://itunes.apple.com/us/app/filemaker-go-17/id1274628191?mt=8">Filemaker 17 to go</a> 
+   app
+   </span>
+</td></tr>
+<tr><td>
+<a onclick="trackOutboundLink('assets/camera-report-print-1.0-blank.pdf'); return false;" href="assets/camera-report-print-1.0-blank.pdf">Blank camera report PDF</a> for a paper backup.
+</td><td><td align='right'>160KB</td></tr>
+</table>
+</p>
+<h3 class="c6"><a id='links' name="h.n0o5unlnkc3c"></a><span>3rd Party Integration.</span></h3>
+<p class="c3">3rd party tools supporting the interchange format:</p>
+<ol class="c1" start="1">
+  <li class="c7"><span class="c2"><a class="c5" href="https://setellite.nl">Setellite</a></span></li>
+  <li class="c7"><span class="c2"><a class="c5" href="https://gist.github.com/reformstudios/993286b82f5e70b43013a3cd5f223c45">Custom Shotgun entity type to hold VES Camera Report schema</a></span></li>
+</ol>
+<h3 class="c6"><a id='links' name="h.n0o5unlnkc3c"></a><span>Links</span></h3>
+<ol class="c1" start="1">
+  <li class="c7"><span class="c2"><a class="c5" href="assets/VESCameraReportProposal.html">Complete Camera Report Proposal</a></span></li>
+  <li class="c7"><span class="c2"><a class="c5" href="https://docs.google.com/document/d/1ZmPxV6TMdPYdJ2ixfQ9V2TtvRVMxLIpn1JrUAGpDTxI/pub">Developer Guide</a></span> if you want to adapt the VES database, or if you want to adapt your own filemaker database to export the VES exchange format.</li>
+  <li class="c7"><span class="c2"><a class="c5" href="https://docs.google.com/document/d/1_A8FBCWZtw2zkUlUi7f02W1UDLgDdBA7u_B1r3ZwsOc/pub">Change Log</a></span> for the specification and camera reports</li>
+  <li class="c7"><a href="LICENSE.txt">License</a></li>
+  <li class="c7">Samples and Screen shots
+  <ol class="c1" start="1">
+    <li class="c7"><span>Laptop entry screen:<BR/> </span><span class="c2"><a class="c5" href="images/camera-report-full-1.0-beta.png"><img width=400 src="images/camera-report-full-1.0-beta.png"/></a></span></li>
+    <li class="c7"><span>Sample PDF output:<BR/></span><span class="c2"><a class="c5" href="images/camera-report-print-1.0.pdf"><img width=400 src="images/camera-report-print-1.0-beta.png"/></a></span></li>
+    <li class="c7"><span>iPad screenshots: <BR/></span><span class="c2"><a class="c5" href="images/ipad-1.png"><img src="images/ipad-1-proxy.png"/></a></span><span>&nbsp;</span><span class="c2"><a class="c5" href="images/ipad-2.png"><img src="images/ipad-2-proxy.png"/></a></span></li>
+   </ol>
+   </li>
+</ol>
+<h3 class="c3"><a id="who" name="h.yb1iv2vde6bt"></a><span>VES Technology Committee</span></h3>
+<p class="c3">
+This is been developed by Sam Richards as a project of the VES
+Technology Committee, with assistance from numerous visual effects
+artists and data-wranglers.
+The original Filemaker database used as a starting point for this project was graciously contributed by Rhythm and Hues.
+</p>
+<p class="c3"> 
+For more details about the VES and the VES technology committee,
+please see <a href="http://www.visualeffectssociety.com/">Ves Home Page</a>.
+</p>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+<BR/>
+</div>
+</body></html>
